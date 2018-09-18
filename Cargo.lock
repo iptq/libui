@@ -1,0 +1,36 @@
+[[package]]
+name = "bitflags"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "libc"
+version = "0.2.43"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "make-cmd"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "ui"
+version = "0.1.0"
+dependencies = [
+ "bitflags 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc 0.2.43 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ui-sys 0.1.0",
+]
+
+[[package]]
+name = "ui-sys"
+version = "0.1.0"
+dependencies = [
+ "libc 0.2.43 (registry+https://github.com/rust-lang/crates.io-index)",
+ "make-cmd 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum bitflags 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)" = "aad18937a628ec6abcd26d1489012cc0e18c21798210f491af69ded9b881106d"
+"checksum libc 0.2.43 (registry+https://github.com/rust-lang/crates.io-index)" = "76e3a3ef172f1a0b9a9ff0dd1491ae5e6c948b94479a3021819ba7d860c8645d"
+"checksum make-cmd 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "a8ca8afbe8af1785e09636acb5a41e08a765f5f0340568716c18a8700ba3c0d3"

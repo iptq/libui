@@ -6,7 +6,9 @@ authors = ["Patrick Walton <pcwalton@mimiga.net>"]
 [dependencies]
 bitflags = "0.7"
 libc = "*"
+ui-sys = { path = "ui-sys" }
 
-[dependencies.ui-sys]
-path = "../ui-sys"
+[workspace]
+members = [".", "ui-sys"]
+
 
